@@ -18,4 +18,4 @@ resultado_num = sum([x2_n.subs(n, i) for i in range(0, 2001)])
 resultado_simplificado = sp.simplify(resultado_num)
 
 # Imprimindo o resultado
-print(f" Somatório [-inf, +inf]:", resultado_simplificado)
+print(f"c) Somatório [-inf, +inf]:", resultado_simplificado)
