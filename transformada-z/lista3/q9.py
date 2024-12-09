@@ -11,6 +11,7 @@ X_z = (z**(-1))/((z**(-1)) -1)
 x_n = X_z(n)
 sp.pprint(X_z.factored())
 
+print("\n") 
 print("------------------------------------------------")
 print("b)")
 # x[n] = (2)ˆ(-n) * u(n) convolução (3)ˆ(-n) * u(n)
@@ -22,6 +23,7 @@ X2_z = x2_n(z)
 X_z = X1_z * X2_z
 sp.pprint(X_z.factored())
 
+print("\n") 
 print("------------------------------------------------")
 print("c)")
 # x[n] = n * [(2)ˆ(-n) * u(n) convolução (2)ˆ(-n) * u(n)]
@@ -36,6 +38,7 @@ Xd_z = sp.diff(X_z, z)
 Xf_z = -z * Xd_z
 sp.pprint(Xf_z.factored())
 
+print("\n") 
 print("------------------------------------------------")
 print("d)")
 # x[n] = (3)**(n) * cos(2 * n)**2 * u(n)
@@ -50,6 +53,7 @@ X3_z = X2_z.subs(z, z / 3)
 X_z = x1_n(z) + X3_z
 sp.pprint((1/2) *(X1_z.factored() + X3_z.general()))
 
+print("\n") 
 print("------------------------------------------------")
 print("e)")
 # x[n] = (2)**(n) * sen(3 * n)**2 * u(n)
@@ -64,6 +68,7 @@ X3_z = X2_z.subs(z, z / 2)
 X_z = x1_n(z) + X3_z
 sp.pprint((1/2) *(X1_z.factored() - X3_z.general()))
 
+print("\n") 
 print("------------------------------------------------")
 print("f)")
 # x[n] = sen(pi/8 * n - pi/4)**2 * u(n-2)
@@ -82,6 +87,7 @@ x1_n = sin(pi_8*n) * u(n)
 X1_z = x1_n(z)
 sp.pprint(z**(-2) * (X1_z.general()))
 
+print("\n") 
 print("------------------------------------------------")
 print("g)")
 # x[n] = n * sen(pi/2 * n) * u(-n)
