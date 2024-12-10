@@ -13,6 +13,7 @@ sp.pprint(X_frac)
 x_n = X_frac(n, causal=True)
 print("x[n]:")
 sp.pprint(x_n)
+sp.pprint(x_n.seq((-10,10)))
 
 print("\n") 
 print("------------------------------------------------")
@@ -24,6 +25,7 @@ sp.pprint(X_frac)
 x_n = X_frac(n, causal=False)
 print("x[n]:")
 sp.pprint(x_n)
+sp.pprint(x_n.seq((-10,10)))
 
 print("\n") 
 print("------------------------------------------------")
@@ -35,6 +37,7 @@ sp.pprint(X_frac)
 x_n = X_frac(n, causal=True)
 print("x[n]:")
 sp.pprint(x_n)
+sp.pprint(x_n.seq((-10,10)))
 
 print("\n") 
 print("------------------------------------------------")
@@ -46,6 +49,7 @@ sp.pprint(X_frac)
 x_n = X_frac(n, causal=False)
 print("x[n]:")
 sp.pprint(x_n)
+sp.pprint(x_n.seq((-10,10)))
 
 print("\n") 
 print("------------------------------------------------")
@@ -64,6 +68,7 @@ x2_n = X2_z(n)
 x_n = x1_n + x2_n
 print("x[n]:")
 sp.pprint(x_n)
+sp.pprint(x_n.seq((-10,10)))
 
 print("\n") 
 print("------------------------------------------------")
@@ -73,6 +78,7 @@ X_z = (z+1)/(z+(sp.Rational(1, 3)))
 x_n = X_z(n)
 print("x[n]:")
 sp.pprint(x_n.simplify())
+sp.pprint(x_n.seq((-10,10)))
 
 print("\n") 
 print("------------------------------------------------")
@@ -101,6 +107,7 @@ x_n = x1_n + x2_n + x3_n
 print("\n") 
 print("x[n]:")
 sp.pprint(x_n.simplify())
+sp.pprint(x_n.seq((-10,10)))
 
 print("\n") 
 print("------------------------------------------------")
@@ -128,7 +135,7 @@ X33_z = (3/2)/(z)
 x3_n = X31_z + X32_z + X33_z
 x_n = delta(n) + X2_z(n) + X31_z(n, causal=False) + X32_z(n) + X33_z(n, causal=False)
 sp.pprint(x_n.simplify())
-
+sp.pprint(x_n.seq((-10,10)))
 
 print("\n") 
 print("------------------------------------------------")
@@ -154,6 +161,7 @@ X32_z = (-1/4)/(z+(1/2))
 x3_n = X31_z + X32_z
 x_n = delta(n) + X2_z * delta(n) + X31_z(n) + X32_z(n)
 sp.pprint(x_n.simplify())
+sp.pprint(x_n.seq((-10,10)))
 
 time.sleep(20)
 os.system('clear')
