@@ -34,8 +34,8 @@ sp.pprint(x2_n.seq((-10,10)))
 print("--------------------------------------------")
 print("\n") 
 
-time.sleep(10)
-os.system('clear')
+#time.sleep(3)
+#os.system('clear')
 
 print("\n") 
 print("------------------------------------------------")
@@ -68,8 +68,8 @@ sp.pprint(x2_n.seq((-10,10)))
 print("--------------------------------------------")
 print("\n") 
 
-time.sleep(10)
-os.system('clear')
+#time.sleep(3)
+#os.system('clear')
 
 
 print("\n") 
@@ -104,8 +104,8 @@ print("--------------------------------------------")
 print("\n")
 
 
-time.sleep(15)
-os.system('clear')
+#time.sleep(25)
+#os.system('clear')
 
 
 print("\n") 
@@ -139,8 +139,8 @@ sp.pprint(x2_n.seq((-10,10)))
 print("--------------------------------------------")
 print("\n")
 
-time.sleep(10)
-os.system('clear')
+#time.sleep(10)
+#os.system('clear')
 
 print("\n") 
 print("------------------------------------------------")
@@ -179,8 +179,8 @@ sp.pprint(x2_n.seq((-10,10)))
 print("--------------------------------------------")
 print("\n")
 
-time.sleep(10)
-os.system('clear')
+#time.sleep(10)
+#os.system('clear')
 
 print("\n") 
 print("------------------------------------------------")
@@ -210,8 +210,8 @@ sp.pprint(x2_n.seq((-10,10)))
 print("--------------------------------------------")
 print("\n")
 
-time.sleep(10)
-os.system('clear')
+#time.sleep(10)
+#os.system('clear')
 
 print("\n") 
 print("------------------------------------------------")
@@ -260,8 +260,8 @@ sp.pprint(x2_n.seq((-10,10)))
 print("--------------------------------------------")
 print("\n")
 
-time.sleep(10)
-os.system('clear')
+#time.sleep(10)
+#os.system('clear')
 
 print("\n") 
 print("------------------------------------------------")
@@ -302,15 +302,15 @@ print("\n")
 print("***")
 print("\n") 
 print("Minha resposta")
-x2_n = delta(n) - (1/2) * delta(n-1) - (1/4) * (-1/2)**(n-1) * u(-n-2) + 2 * (-1)**(n-1) * u(-n-2) 
+x2_n = delta(n) - (1/2) * delta(n-1) - (1/2) * (-1/2)**(n-1) * u(-1*(n-1)-1) + 2 * (-1)**(n-1) * u(-1*(n-1)-1) 
 sp.pprint(x2_n)
 print("x[n]")
 sp.pprint(x2_n.seq((-10,10)))
 print("--------------------------------------------")
 print("\n")
 
-time.sleep(10)
-os.system('clear')
+#time.sleep(10)
+#os.system('clear')
 
 
 print("\n") 
@@ -358,5 +358,5 @@ print("--------------------------------------------")
 print("\n")
 
 
-time.sleep(10)
-os.system('clear')
+#time.sleep(10)
+#os.system('clear')
