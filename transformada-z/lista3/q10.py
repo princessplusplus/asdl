@@ -210,7 +210,7 @@ sp.pprint(x2_n.seq((-10,10)))
 print("--------------------------------------------")
 print("\n")
 
-time.sleep(3)
+time.sleep(10)
 os.system('clear')
 
 print("\n") 
@@ -260,6 +260,9 @@ sp.pprint(x2_n.seq((-10,10)))
 print("--------------------------------------------")
 print("\n")
 
+time.sleep(10)
+os.system('clear')
+
 print("\n") 
 print("------------------------------------------------")
 print("h)")
@@ -306,7 +309,7 @@ sp.pprint(x2_n.seq((-10,10)))
 print("--------------------------------------------")
 print("\n")
 
-time.sleep(3)
+time.sleep(10)
 os.system('clear')
 
 
