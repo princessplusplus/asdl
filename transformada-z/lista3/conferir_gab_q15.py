@@ -39,6 +39,11 @@ x2_n = 3 * delta(n) - 9 * (3)**(n-1) * u(n-1) + 2 * (-3)**(n-1) * u(n-1) - 1 * n
 sp.pprint(x2_n)
 print("x[n]:")
 sp.pprint(x2_n.seq((-10,10)))
+print("Minha resposta 2")
+x2_n = 3 * ((1/2) * (-3)**(n) * u(n) + (1/2) * n * (-3)**(n-1) * u(n) - 2 * (3)**(n) * u(n))
+sp.pprint(x2_n)
+print("x[n]:")
+sp.pprint(x2_n.seq((-10,10)))
 print("--------------------------------------------")
 print("\n") 
 
