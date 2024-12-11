@@ -80,7 +80,11 @@ print("\n")
 #os.system('clear')
 
 print("d)")
-
+print("Minha resposta")
+x2_n = 100 * ((-2)**(n) * u(n) + 1 * n * (-2)**(n-1) * u(n) + 2 * n * (n-1) * (-2)**(n-1) * u(n))
+sp.pprint(x2_n)
+print("x[n]:")
+sp.pprint(x2_n.seq((-10,10)))
 print("--------------------------------------------")
 print("\n") 
 
