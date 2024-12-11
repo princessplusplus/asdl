@@ -54,9 +54,22 @@ print("\n")
 print("h(t)")
 sp.pprint(h_t)
 
-Y_s_check = - (sp.Rational(1,3)) * (s/(s-2)*(s+1))
-y_t_check = Y_s_check(t)
-#sp.pprint(y_t_check)
+x_t_novo = exp(3*t)
+X_s_novo = x_t_novo(s)
+
+Y_s_novo = X_s_novo * H_s
+
+Y_novo_fat = Y_s_novo.factored()
+print("Fatorado:")
+sp.pprint(Y_novo_fat)
+
+print("\n")
+
+Y_novo_frac = Y_novo_fat.partfrac()
+print("Frações parciais:")
+sp.pprint(Y_novo_frac)
+
+
 
 
 time.sleep(36)
